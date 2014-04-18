@@ -21,17 +21,17 @@
 *******************************通用******************************
 
 error:
-{
-"response":"error",
-"text":{
-"text":"不知道什么错"
-}
-}
+  {
+    "response":"error",
+    "text":{
+      "text":"不知道什么错"
+    }
+  }
 
 
 
 
 success:
-{
-"response":"success"
-}
+  {
+    "response":"success"
+  }
