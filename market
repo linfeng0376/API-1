@@ -1,6 +1,7 @@
-功能		      地址		           参数
-登录	        /login		         username password		
+功能		      地址                参数
+登录	        /login              username password		
 首页图片	    /pic/hot				
-获取产品信息	/product/info	     barcode			
-出售	      	/store/sell	       sku:[1111:2|22234:3|1111:3]  totalprice:[总价]  paytype[true/false]
-获取所有订单	/store/order/get   param:[all]或者[11111|2222|3333]或者[11111]
+获取产品信息	/product/info       barcode			
+出售	      	/store/sell         sku:[1111:2|22234:3|1111:3]  totalprice:[总价]  paytype[true/false]
+获取所有订单	/store/order/get    param:[all]或者[11111|2222|3333]或者[11111]
+操作订单      /store/order/do     action:[DISPATCH/CANCEL]
