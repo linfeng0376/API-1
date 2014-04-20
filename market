@@ -1,10 +1,28 @@
 功能		      地址                参数
 登录	        /login              username password		
+
 首页图片	    /pic/hot				
+
+
 获取产品信息	/product/info       barcode			
+
+
 出售	      	/store/sell         sku:[1111:2|22234:3|1111:3]  totalprice:[总价]  paytype[true/false]
+
+
 获取所有订单	/store/order/get    param:[all]或者[11111|2222|3333]或者[11111]
-操作订单      /store/order/do     orderid:[订单号]   action:[DISPATCH/CANCEL]
+
+
+操作订单      /store/order/do     action:[GET/DISPATCH/CANCEL]
+[GET]:{orderid:[订单号]}                param:[all]或者[11111|2222|3333]或者[11111]
+[DISPATCH]:{orderid:[订单号]}           
+[CANCEL]:{orderid:[订单号]}
+
+
+管理进货商    /store/supplier/do  action:[GET/DELETE/ADD]
+[GET]:{supplierid:[进货商编号]}         [all]或者[11111|2222|3333]或者[11111]
+[DELETE]:{supplierid:[进货商编号]}      [all]或者[11111|2222|3333]或者[11111]
+[ADD]:{name:[],tel:[电话],addr:[地址]}
 
 
 
