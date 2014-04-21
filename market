@@ -19,10 +19,16 @@
 [CANCEL]:{orderid:[订单号]}
 
 
-管理进货商    /store/supplier/do  action:[GET/DELETE/ADD]
+管理进货商    /store/supplier/do  action:[GET/DELETE/ADD/EDIT]
 [GET]:{supplierid:[进货商编号]}         [all]或者[11111|2222|3333]或者[11111]
 [DELETE]:{supplierid:[进货商编号]}      [all]或者[11111|2222|3333]或者[11111]
 [ADD]:{name:[],tel:[电话],addr:[地址]}
+[EDIT]:{supplierid:[进货商编号],name:[],tel:[],addr:[地址]}
+
+
+商店设置      /store/setting/do   action:[GET/SET]
+[GET]
+[SET]:{isonline:[true/false],deliverfee:[运送费],freeamount:[免运费额度]}
 
 
 
