@@ -34,6 +34,13 @@
 进货          /store/purchase     barcode:[],supplierid:[],count:[],totalprice:[],ispayed:[true/false]
 
 
+库存操作      /store/inventory/do action:[GET/SET]
+
+
+通用查询      /store/get          what:[SUPPLIER/ORDER/SUPPLIERORDER/SETTING/INVENTORY]
+                                  order:[]
+
+
 
 
 
