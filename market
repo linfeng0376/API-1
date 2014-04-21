@@ -31,7 +31,7 @@
 [SET]:{isonline:[true/false],deliverfee:[运送费],freeamount:[免运费额度]}
 
 
-进货          /store/purchase     barcode:[],supplierid:[],count[],totalprice[],ispayed[true/false]
+进货          /store/purchase     barcode:[],supplierid:[],count:[],totalprice:[],ispayed:[true/false]
 
 
 
