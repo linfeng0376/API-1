@@ -33,9 +33,10 @@
 进货          /store/purchase     sku:[1111:2|22234:3|1111:3],supplierid:[],totalprice:[],ispayed:[true/false]
 
 
-库存操作      /store/inventory/do action:[GET/SET]
+库存操作      /store/inventory/do action:[GET/SET/CHECK]
 [GET]:{barcode:[all/或者某个条码]}	获取此商店库存中某个或者全部商品的信息
 [SET]:{barcode:[],sellprice:[],purprice:[],amount:[],sellcount:[]}
+[CHECK]:{name:[],amount[],realamount[],margin[]}
 
 
 通用查询      /store/get          what:[SUPPLIER/ORDER/SUPPLIERORDER/SETTING/INVENTORY]
