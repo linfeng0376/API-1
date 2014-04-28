@@ -34,7 +34,7 @@
 
 
 库存操作      /store/inventory/do action:[GET/SET/CHECK]
-[GET]:{barcode:[all/或者某个条码]}	获取此商店库存中某个或者全部商品的信息
+[GET]:{barcode:[all/或者某个条码]}	pageindex:[],pagesize:[],type:[商品类型id]
 [SET]:{barcode:[],sellprice:[],purprice:[],amount:[],sellcount:[]}
 [CHECK]:{name:[商品名],amount[库存量],realamount[实际库存量],margin[差值]}
 
