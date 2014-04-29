@@ -3,7 +3,7 @@
 首页图片      /pic/hot				
 
 
-获取产品信息	/product/info       barcode:[]	
+获取产品信息	/product/info      get:[producttype/productinfo]
 
 
 出售          /store/sell         sku:[1111:2|22234:3|1111:3]  totalprice:[总价]  paytype[true/false]
