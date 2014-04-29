@@ -36,13 +36,14 @@
 库存操作      /store/inventory/do action:[GET/SET/CHECK]
 [GET]:{barcode:[all/或者某个条码]}	pageindex:[],pagesize:[],type:[商品类型id]
 [SET]:{barcode:[],sellprice:[],purprice:[],amount:[],sellcount:[]}
-[CHECK]:{name:[商品名],amount[库存量],realamount[实际库存量],margin[差值]}
+[CHECK]:{barcode:[],name:[商品名],beforeamount[库存量],realamount[实际库存量],margin[差值]}
 
 
 通用查询      /store/get          what:[SUPPLIER/ORDER/SUPPLIERORDER/SETTING/INVENTORY]
                                   order:[]
 
-
+操作进货单     /store/supplier/order/do     action:[GET/DISPATCH/CANCEL]
+[GET]:{orderid:[订单号]}		orderid:[all]或者[11111|2222|3333]或者[11111]  pageindex:[],pagesize[] supplierid:[进货商ID，可选参数] payment:[true/false，可选参数]
 
 
 
