@@ -47,8 +47,7 @@
 
 
 
-
-
+云统计        /store/statistics			type:[sell/dispatch/purchase]			get:[count/price/all]		begindate:[],finishdate:[]
 
 
 
