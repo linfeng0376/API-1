@@ -38,7 +38,7 @@
 [SET]:{barcode:[],sellprice:[],purprice:[],amount:[],sellcount:[]}
 [CHECK]:{barcode:[],name:[商品名],beforeamount[库存量],realamount[实际库存量],margin[差值]}
 
-盘点记录      /store/checkhistory
+盘点记录      /store/inventory/checkhistory   pageindex:[],pagesize:[]
 
 
 通用查询      /store/get          what:[SUPPLIER/ORDER/SUPPLIERORDER/SETTING/INVENTORY]
