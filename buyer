@@ -1,1 +1,2 @@
-API
+注册					/buyer/registe								username:[],password:[]
+登录					/buyer/login 									username:[],password:[]
