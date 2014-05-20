@@ -2,10 +2,9 @@
 登录					/buyer/login					username:[],password:[]
 
 康乐微电影    /buyer/movie        get:[TYPEPAGE/STARTYPE/MOVIETYPE/STAR/NEW/HOT/FAVORITE]   pageindex:[],pagesize:[]
-
 TYPEPAGE:无参数
-STARTYPE:startype:[]
-MOVIETYPE:movietype:[]
+STARTYPE:startype:[ACTOR/ACTRESS/CHILDSTAR/CARTOON]
+MOVIETYPE:movietype:[FAMILY/LOVE/COMEDY/DETECTIVE/SPORT]
 STAR:starid:[]
 NEW:无参
 HOT:无参
