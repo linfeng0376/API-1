@@ -1,7 +1,7 @@
 注册					/buyer/register				username:[],password:[]
 登录					/buyer/login					username:[],password:[]
 
-康乐微电影    /buyer/movie        get:[TYPEPAGE/STARTYPE/MOVIETYPE/STAR/NEW/HOT/FAVORITE]
+康乐微电影    /buyer/movie        get:[TYPEPAGE/STARTYPE/MOVIETYPE/STAR/NEW/HOT/FAVORITE]   pageindex:[],pagesize:[]
 
 TYPEPAGE:无参数
 STARTYPE:startype:[]
