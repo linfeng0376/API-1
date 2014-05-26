@@ -1,0 +1,8 @@
+商品保存购物车        /buyCart/action     action[ADD]   buyerId:[]  barcode:[] amount:[]
+
+修改购物车商品        /buyCart/action     action[UPDATE]   buyerId:[]  barcode:[] amount:[]
+
+删除购物车商品        /buyCart/action     action[DELETE]   buyerId:[]  barcode:[] 
+
+
+获得购物车         /buyCart/action     action[DELETE]   buyerId:[]  
