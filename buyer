@@ -1,5 +1,10 @@
 注册					/buyer/register				username:[],password:[]
 登录					/buyer/login					username:[],password:[]
+添加第一个联系地址,设为默认        /buyer/action          
+
+
+
+
 
 康乐微电影    /buyer/kong/movie        action:[TYPEPAGE/STARTYPE/MOVIETYPE/STAR/NEW/HOT/FAVORITE]   pageindex:[],pagesize:[]
 TYPEPAGE:无参数
