@@ -105,9 +105,53 @@ API
 #### Success
 	{
 		'storeid': '商店ID'，
+		'name': '商店名字'，
+		'street': '所属街道'，
+		'inventory': {'商店库存'}，
+		'orders': {'商店订单'}，
+		'supplierOrders': {'商店进货单'}，
+		'suppliers': '商店供货商'，
+		'isonline': '是否营业'，
+		'deliverFee': '配送收取的费用'，
+		'freeAmount': '满多少总价免运费'，
+		'orderDate': '当天的时间'，
+		'serialNumber': '当天的流水号'，
+		'score': '评分'，
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
+	
+### 5. 根据用户名获取默认的Homepage
+#### URL : /buyer/action
+
+#### Method : POST
+
+    {
+        'action': 'GETDEFAULTHOMEPAGE',
+       
+        'streetId': '街道ID',
+        
+	
+    }
+
+### Result:
+
+#### Success
+	{
 		'storeid': '商店ID'，
-		'storeid': '商店ID'，
-		'storeid': '商店ID'，
+		'items': {'typeid':'类型ID'，
+			'typename':'类型名称'，
+			'productid':'商品ID'，
+			'productname':'商品名称'，
+			'productprice':'商品价格'，
+			'originalprice':'进货价格'，
+			'types':{'typeid':'类型ID'，'typename':'类型名称'}
+		
+		}，
+	
 	}
 
 #### Error
