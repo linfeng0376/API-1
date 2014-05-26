@@ -45,9 +45,28 @@ streetId:[]  detail:[]  postalcode:[]  phone:[] mobile:[]
 
 康乐微电影    /buyer/kong/movie        action:[TYPEPAGE/STARTYPE/MOVIETYPE/STAR/NEW/HOT/FAVORITE]   pageindex:[],pagesize:[]
 TYPEPAGE:无参数
+返回格式：
+
+
 STARTYPE:startype:[ACTOR/ACTRESS/CHILDSTAR/CARTOON]
 MOVIETYPE:movietype:[FAMILY/LOVE/COMEDY/DETECTIVE/SPORT]
 STAR:starid:[]
 NEW:无参
+
+
 HOT:无参
+返回格式：
+{
+"response":"movie",
+"movies":[
+{
+"starname":"桂纶镁",
+"title":"我～移情别恋了-上",
+"introduction":"北大的校花高材生，身边不乏追求者，却不喜欢高富帅,有一天",
+"date":"2014-05-21 04:50:25",
+"url":"http://v.youku.com/player/getRealM3U8/vid/XMzU5NDE3NTYw/type//video.m3u8",
+"hasPrize":true
+}
+]
+}
 FAVORITE:无参
