@@ -1,54 +1,116 @@
 API
 ===
-### 1. Create user
+### 1. 添加第一个联系地址,设为默认
 
-#### URL : /api/user/create/
+#### URL : /buyer/action
 
 #### Method : POST
 
     {
-        'username': '用户名',
-        'password': '密码',
-        'repeatPwd': '密码',
-        'mobile': '11位手机号码',
-        'email': '电子邮箱',
-		'community': '1', (小区的主键)
-		'is_admin': '1', ('0':业主, '1':工作人员, '2':管理员)
-		'floor': '楼栋号',
-		'gate_card': '门牌号',
-		'address': '详细地址'
+        'action': 'ADDFIRSTDEFAULTCONTACTINFO',
+        'streetId': '街道ID',
+        'detail': '详细地址',
+        'postalcode': '邮编',
+        'phone': '座机号',
+        'mobile': '手机号',
+	
     }
 
 ### Result:
 
 #### Success
 	{
-		'info': 'create user successful'
+		'response': 'success'
 	}
 
 #### Error
 	{
-		'username_error': True, 
-		'info': '用户名已存在'
+		'response': '非法参数'
 	}
 
+### 2. 添加联系地址
+
+#### URL : /buyer/action
+
+#### Method : POST
+
+    {
+        'action': 'ADDCONTACTINFO',
+        'streetId': '街道ID',
+        'detail': '详细地址',
+        'postalcode': '邮编',
+        'phone': '座机号',
+        'mobile': '手机号',
+	
+    }
+
+### Result:
+
+#### Success
 	{
-		'password_error': True, 
-		'info': '两次密码输入不相同'
+		'response': 'success'
 	}
 
+#### Error
 	{
-		'password_error': True, 
-		'info': '密码：字母、数字组成，6-15位'
+		'response': '非法参数'
+	}
+	
+### 3. 编辑联系地址
+
+#### URL : /buyer/action
+
+#### Method : POST
+
+    {
+        'action': 'EDITCONTACTINFO',
+        'contactInfoId':'联系地址ID',
+        'streetId': '街道ID',
+        'detail': '详细地址',
+        'postalcode': '邮编',
+        'phone': '座机号',
+        'mobile': '手机号',
+	
+    }
+
+### Result:
+
+#### Success
+	{
+		'response': 'success'
 	}
 
+#### Error
 	{
-		'mobile_error': True, 
-		'info': '请输入正确的手机号码'
+		'response': '非法参数'
+	}
+	
+
+### 4. 获得最合适的商店
+
+#### URL : /buyer/action
+
+#### Method : POST
+
+    {
+        'action': 'GETBESTSTORE',
+       
+        'streetId': '街道ID',
+        
+	
+    }
+
+### Result:
+
+#### Success
+	{
+		'response': 'success'
 	}
 
+#### Error
 	{
-		'email_error': True, 
-		'info': '请输入正确的邮箱地址
+		'response': '非法参数'
 	}
+	
+
 
