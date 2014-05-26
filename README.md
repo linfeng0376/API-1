@@ -104,7 +104,10 @@ API
 
 #### Success
 	{
-		'response': 'success'
+		'storeid': '商店ID'，
+		'storeid': '商店ID'，
+		'storeid': '商店ID'，
+		'storeid': '商店ID'，
 	}
 
 #### Error
