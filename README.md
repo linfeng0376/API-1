@@ -124,7 +124,8 @@ API
 		'response': '非法参数'
 	}
 	
-### 6. 获取某个商店的首页
+### 5. 根据用户名获取默认的Homepage
+
 #### URL : /buyer/action
 
 #### Method : POST
@@ -161,15 +162,15 @@ API
 	
 
 
-### 5. 根据用户名获取默认的Homepage
+### 6. 获取某个商店的首页
 #### URL : /buyer/action
 
 #### Method : POST
 
     {
-        'action': 'GETDEFAULTHOMEPAGE',
+        'action': 'GETHOMEPAGE',
        
-        'streetId': '街道ID',
+        'storeId': '商店ID',
         
 	
     }
