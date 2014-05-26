@@ -3,30 +3,30 @@
 
 
 
-添加第一个联系地址,设为默认        /buyer/action   action:[ADDFIRSTDEFAULTCONTACTINFO]   userId:[]     
+添加第一个联系地址,设为默认        /buyer/action   action:[ADDFIRSTDEFAULTCONTACTINFO]       
 streetId:[]  detail:[]  postalcode:[]  phone:[] mobile:[]
 
-添加联系地址 /buyer/action    action:[ADDCONTACTINFO]          userId:[]     
+添加联系地址 /buyer/action    action:[ADDCONTACTINFO]              
 streetId:[]  detail:[]  postalcode:[]  phone:[] mobile:[]
 
-编辑联系地址  /buyer/action   action:[EDITCONTACTINFO]        userId:[]     contactInfoId:[]
+编辑联系地址  /buyer/action   action:[EDITCONTACTINFO]             contactInfoId:[]
 streetId:[]  detail:[]  postalcode:[]  phone:[] mobile:[]
 
-获得最合适的商店   /buyer/action   action:[GETBESTSTORE]    userId:[]  streetId[]
+获得最合适的商店   /buyer/action   action:[GETBESTSTORE]      streetId[]
 
-根据用户名获取默认的Homepage      /buyer/action    action:[GETDEFAULTHOMEPAGE]   userId:[]  streetId[]  
+根据用户名获取默认的Homepage      /buyer/action    action:[GETDEFAULTHOMEPAGE]    streetId[]  
 
-获取某个商店的首页    /buyer/action    action:[GETHOMEPAGE]   userId:[]  storeId[]  
+获取某个商店的首页    /buyer/action    action:[GETHOMEPAGE]     storeId[]  
 
-通过用户的购物车生成Order     /buyer/action   action:[CREATEORDER]   userId:[] storeId:[] contactId:[]
+通过用户的购物车生成Order     /buyer/action   action:[CREATEORDER]    storeId:[] contactId:[]
 
-获取用户的订单数据   /buyer/action   action:[GETFORMEDBUYERORDERS]   userId:[]  state[]  pageindex:[] pagesize:[]
+获取用户的订单数据   /buyer/action   action:[GETFORMEDBUYERORDERS]     state[]  pageindex:[] pagesize:[]
 
 
-获取用户的order具体信息  /buyer/action  action:[GETFORMEDBUYERORDERDETAIL] userId:[]   orderId:[] 
+获取用户的order具体信息  /buyer/action  action:[GETFORMEDBUYERORDERDETAIL]    orderId:[] 
  
  
-添加收藏    /buyer/action  action:[ADDTOFAVORATE]   userId:[]  barcode:[]
+添加收藏    /buyer/action  action:[ADDTOFAVORATE]     barcode:[]
 
 
 康乐微电影    /buyer/kong/movie        action:[TYPEPAGE/STARTYPE/MOVIETYPE/STAR/NEW/HOT/FAVORITE]   pageindex:[],pagesize:[]
