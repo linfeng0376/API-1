@@ -1,4 +1,18 @@
 注册					/buyer/register				username:[],password:[]
+
+错误格式
+{
+"response":"error",
+"text":{
+"text":"用户名已经存在"
+}
+}
+
+成功格式：
+{
+"response":"success"
+}
+
 登录					/buyer/login					username:[],password:[]
 
 
