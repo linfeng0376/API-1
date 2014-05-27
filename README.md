@@ -536,7 +536,7 @@ API
 
     {
         'action': 'PRODUCTDETAIL',
-        'orderid': '订单ID'，
+        'storeid': '商店ID'，
         'barcode': '商品条码',
 	
       
