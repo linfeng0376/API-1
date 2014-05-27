@@ -528,3 +528,36 @@ API
 	{
 		'response': '非法参数'
 	}
+
+### 16. 获取商品详情
+#### URL : /product/info
+
+#### Method : POST
+
+    {
+        'action': 'PRODUCTDETAIL',
+        'orderid': '订单ID'，
+        'barcode': '商品条码',
+	
+      
+    }
+
+### Result:
+
+#### Success
+	{
+		"product":{
+			"barcode":"6920459907429",
+			"name":"CAN310每日C水晶24入",
+			"url":"/a",
+			"life":0,
+			"price":0.0,
+			"amount":100
+		},
+		"response":"productdetail"
+}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
