@@ -147,7 +147,7 @@ API
 			'productid':'商品ID'，
 			'productname':'商品名称'，
 			'productprice':'商品价格'，
-			'originalprice':'进货价格'，
+			'url':'商品的图片路径',
 			'types':{'typeid':'类型ID'，'typename':'类型名称'}
 		
 		}，
