@@ -561,3 +561,42 @@ API
 	{
 		'response': '非法参数'
 	}
+
+
+### 16. 根据类型获取该类型的所有商品
+#### URL : /product/info
+
+#### Method : POST
+
+    {
+        'action': 'GETBYTYPE',
+        'typeId': '类型Id'，
+	
+      
+    }
+
+### Result:
+
+#### Success
+	{
+		"formProductDetails":[
+					{
+					"name":"酸辣牛肉面",
+					"life":80,
+					"price":0.0,
+					"amount":100
+					},
+					{
+					"name":"香菇炖鸡面",
+					"life":80,
+					"price":0.0,
+					"amount":100
+					},
+
+				]
+}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
