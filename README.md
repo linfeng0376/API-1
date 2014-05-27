@@ -477,3 +477,55 @@ API
 	{
 		'response': '非法参数'
 	}
+	
+	
+### 14. 配送订单
+#### URL : /store/order/do
+
+#### Method : POST
+
+    {
+        'action': 'DISPATCH',
+        'orderid': '订单ID'，
+	
+      
+    }
+
+### Result:
+
+#### Success
+	{
+		'response': 'success'
+	
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
+
+
+### 15. 取消订单
+#### URL : /store/order/do
+
+#### Method : POST
+
+    {
+        'action': 'CANCEL',
+        'orderid': '订单ID'，
+	
+      
+    }
+
+### Result:
+
+#### Success
+	{
+		'response': 'success'
+	
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
