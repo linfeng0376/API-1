@@ -337,3 +337,143 @@ API
 		'response': '非法参数'
 	}
 	
+### 11. 添加商品到购物车
+
+#### URL : /buyCart/action
+
+#### Method : POST
+
+    {
+        'action': 'ADD',
+        'barcode': '商品ID',
+        'amount': '商品数量',
+	
+    }
+
+### Result:
+
+#### Success
+	{
+		'response': 'success'
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
+	
+	
+	
+### 11. 添加商品到购物车
+
+#### URL : /buyCart/action
+
+#### Method : POST
+
+    {
+        'action': 'ADD',
+        'barcode': '商品ID',
+        'amount': '商品数量',
+	
+    }
+
+### Result:
+
+#### Success
+	{
+		'response': 'success'
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
+	
+### 11. 购物车删除商品
+
+#### URL : /buyCart/action
+
+#### Method : POST
+
+    {
+        'action': 'DELETE',
+        'barcode': '商品ID',
+     
+	
+    }
+
+### Result:
+
+#### Success
+	{
+		'response': 'success'
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
+	
+	
+### 12. 购物车修改商品数量
+
+#### URL : /buyCart/action
+
+#### Method : POST
+
+    {
+        'action': 'DELETE',
+        'barcode': '商品ID',
+     	 'amount': '商品数量',
+	
+    }
+
+### Result:
+
+#### Success
+	{
+		'response': 'success'
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
+	
+### 13. 获取用户的购物车
+#### URL : /buyCart/action
+
+#### Method : POST
+
+    {
+        'action': 'GET',
+      
+    }
+
+### Result:
+
+#### Success
+	{
+		'cartid': '购物车ID'，
+	
+		'cartitem': {
+			'itemid':'购物车项ID'，
+			'product':{
+				'barcode':'商品ID'，
+				'name':'商品名称'，
+				'sellprice':'销售价格'，
+				'type':{'商品类型'}，
+				'clickcount':'人气指数'
+			},
+		
+			'count':'商品数量'，
+			'buyCart':'所属购物车'
+		
+		}，
+	
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
