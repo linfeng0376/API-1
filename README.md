@@ -126,14 +126,13 @@ API
 	
 ### 5. 根据用户名获取默认的Homepage
 
-#### URL : /buyer/action
+#### URL : /buyer/homepage
 
 #### Method : POST
 
     {
-        'action': 'GETDEFAULTHOMEPAGE',
-       
-        'streetId': '街道ID',
+        
+        'storeId': '商店ID',
         
 	
     }
