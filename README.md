@@ -198,4 +198,142 @@ API
 	}
 	
 
+### 7. 通过用户的购物车生成Order
 
+#### URL : /buyer/action
+
+#### Method : POST
+
+    {
+        'action': 'CREATEORDER',
+        'storeId': '商店ID',
+        'contactId': '联系人Id',
+       
+	
+    }
+
+### Result:
+
+#### Success
+	{
+		'orderId': '订单ID号'
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
+
+### 8. 获取用户的订单数据
+#### URL : /buyer/action
+
+#### Method : POST
+
+    {
+        'action': 'GETFORMEDBUYERORDERS',
+       	'state':'订单状态'，
+        'pageindex': '分页第几页',
+        'pagesize': '分页页面大小',
+	
+    }
+
+### Result:
+
+#### Success
+	{
+		'orderid': '订单ID'，
+		'date':'日期'，
+		'totalprice':'总价'，
+		'items': {
+		
+			'barcode':'商品ID'，
+			'name':'商品名称'，
+			'price':'商品价格'，
+			'count':'商品数量'，
+			'url':'商品图片URL'
+		
+		}，
+	
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
+	
+
+
+### 9. 获取用户的order具体信息
+#### URL : /buyer/action
+
+#### Method : POST
+
+    {
+        'action': 'GETFORMEDBUYERORDERDETAIL',
+       	'orderId':'订单ID'，
+       
+	
+    }
+
+### Result:
+
+#### Success
+	{
+		'orderid': '订单ID'，
+		'createDate':'创建日期'，
+		'payDate':'付款日期'，
+		'prepareDate': '处理日期'，
+		'deliverDate':'配送日期'，
+		'finishDate':'完成日期'，
+		'totalprice': '总价'，
+		'username':'用户名'，
+		'address':'地址'，
+		'tel': '电话'，
+		'payType':{'ONLINE'：'网上支付'，'DESTINATION':'货到付款'}
+	
+		
+		
+		
+		'items': {
+		
+			'barcode':'商品ID'，
+			'name':'商品名称'，
+			'price':'商品价格'，
+			'count':'商品数量'，
+			'url':'商品图片URL'
+		
+		}，
+	
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
+	
+	
+### 10. 添加收藏
+
+#### URL : /buyer/action
+
+#### Method : POST
+
+    {
+        'action': 'ADDTOFAVORATE',
+        'barcode': '商品ID',
+       
+	
+    }
+
+### Result:
+
+#### Success
+	{
+		'response': 'success'
+	}
+
+#### Error
+	{
+		'response': '非法参数'
+	}
+	
