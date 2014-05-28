@@ -600,3 +600,113 @@ API
 	{
 		'response': '非法参数'
 	}
+### 17. 获取所有的省份
+#### URL : /buyer/address
+
+#### Method : POST
+
+    {
+        'action': 'PROVINCE',
+	
+      
+    }
+
+### Result:
+
+#### Success
+	{
+		"fpList":[
+			{
+				"provinceid":1,
+				"name":"江苏省"
+			}
+		]
+	}
+#### Error
+	{
+		'response': '非法参数'
+	}
+	
+	
+	
+### 18. 获取省份所有的市
+#### URL : /buyer/address
+
+#### Method : POST
+
+    {
+        'action': 'CITY',
+	'provinceId':'省份ID'
+      
+    }
+
+### Result:
+
+#### Success
+	{
+	"fcList":[
+			{
+				"cityid":1,
+				"name":"苏州市"
+			}
+		]
+	}
+#### Error
+	{
+		'response': '非法参数'
+	}
+### 19. 获得市下的所有区
+#### URL : /buyer/address
+
+#### Method : POST
+
+    {
+        'action': 'DISTRICT',
+	'cityId':'城市ID'
+      
+    }
+
+### Result:
+
+#### Success
+	{
+	"fdList":[
+			{
+			"districtid":1,
+			"name":"吴中区"
+			}
+		]
+	}
+#### Error
+	{
+		'response': '非法参数'
+	}
+
+
+### 20. 获得区下所有的街道
+#### URL : /buyer/address
+
+#### Method : POST
+
+    {
+        'action': 'STREET',
+	'districtId':'区ID'
+      
+    }
+
+### Result:
+
+#### Success
+	{
+	"fsList":[
+			{
+			"streetid":1,
+			"name":"浦庄大道"
+			}
+		]
+	}
+#### Error
+	{
+		'response': '非法参数'
+	}
+
