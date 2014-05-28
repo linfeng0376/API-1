@@ -563,7 +563,7 @@ API
 	}
 
 
-### 16. 根据类型获取该类型的所有商品
+### 17. 根据类型获取该类型的所有商品
 #### URL : /product/info
 
 #### Method : POST
@@ -600,7 +600,7 @@ API
 	{
 		'response': '非法参数'
 	}
-### 17. 获取所有的省份
+### 18. 获取所有的省份
 #### URL : /buyer/address
 
 #### Method : POST
@@ -629,7 +629,7 @@ API
 	
 	
 	
-### 18. 获取省份所有的市
+### 19. 获取省份所有的市
 #### URL : /buyer/address
 
 #### Method : POST
@@ -655,7 +655,7 @@ API
 	{
 		'response': '非法参数'
 	}
-### 19. 获得市下的所有区
+### 20. 获得市下的所有区
 #### URL : /buyer/address
 
 #### Method : POST
@@ -683,7 +683,7 @@ API
 	}
 
 
-### 20. 获得区下所有的街道
+### 21. 获得区下所有的街道
 #### URL : /buyer/address
 
 #### Method : POST
